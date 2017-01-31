@@ -3,6 +3,7 @@ package com.tansel;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Locale;
 
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -17,6 +18,7 @@ import com.tansel.model.RowInformation;
 public class ExcelReader {
 
 	public static void main(String[] args) {
+		Locale.setDefault(new Locale("tr", "TR"));
 		File file = new File("metrajNetwork-orjinal.xls");
 		
 		ExcelReaderController controller = new ExcelReaderController();
